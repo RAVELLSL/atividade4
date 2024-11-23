@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios - Teclas de Atalho</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            margin: 0;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question label {
+            font-weight: bold;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .answer-input {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .answer-input:focus {
+            outline: none;
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        #toggle-btn {
+            display: block;
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #toggle-btn:hover {
+            background-color: #0056b3;
+        }
+
+        #gabarito {
+            display: none;
+            margin-top: 30px;
+            background-color: #e9f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #b6dfff;
+        }
+
+        #gabarito h2 {
+            margin-top: 0;
+            color: #007BFF;
+            font-size: 1.5rem;
+        }
+
+        #gabarito p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        #pontuacao {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #f0f8ff;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista de Exercícios - Teclas de Atalho</h1>
+    </header>
+
+    <div class="container">
+        <p>Complete os exercícios abaixo preenchendo o comando correto para cada ação. Clique no botão para verificar ou ocultar o gabarito.</p>
+        <form id="exercicio-form">
+            <div class="question">
+                <label for="q1">1. Qual o atalho para copiar um texto?</label>
+                <input type="text" id="q1" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q2">2. Qual o atalho para colar um texto?</label>
+                <input type="text" id="q2" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q3">3. Qual o atalho para salvar um documento?</label>
+                <input type="text" id="q3" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q4">4. Qual o atalho para desfazer uma ação?</label>
+                <input type="text" id="q4" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q5">5. Qual o atalho para selecionar tudo?</label>
+                <input type="text" id="q5" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q6">6. Qual o atalho para abrir o menu de ajuda?</label>
+                <input type="text" id="q6" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q7">7. Qual o atalho para imprimir um documento?</label>
+                <input type="text" id="q7" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q8">8. Qual o atalho para fechar uma janela?</label>
+                <input type="text" id="q8" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q9">9. Qual o atalho para alternar entre janelas abertas?</label>
+                <input type="text" id="q9" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+            <div class="question">
+                <label for="q10">10. Qual o atalho para criar um novo documento?</label>
+                <input type="text" id="q10" class="answer-input" placeholder="Digite aqui o atalho">
+            </div>
+        </form>
+        <button id="toggle-btn" onclick="toggleGabarito()">Exibir Gabarito</button>
+        <div id="gabarito">
+            <h2>Gabarito</h2>
+            <p><span class="correct-answer">1.</span> Ctrl + C</p>
+            <p><span class="correct-answer">2.</span> Ctrl + V</p>
+            <p><span class="correct-answer">3.</span> Ctrl + S</p>
+            <p><span class="correct-answer">4.</span> Ctrl + Z</p>
+            <p><span class="correct-answer">5.</span> Ctrl + A</p>
+            <p><span class="correct-answer">6.</span> F1</p>
+            <p><span class="correct-answer">7.</span> Ctrl + P</p>
+            <p><span class="correct-answer">8.</span> Alt + F4</p>
+            <p><span class="correct-answer">9.</span> Alt + Tab</p>
+            <p><span class="correct-answer">10.</span> Ctrl + N</p>
+            <p id="pontuacao"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido com ❤️ para aprendizado. <a href="#">Saiba mais</a>.</p>
+    </footer>
+
+    <script>
+        const respostasCorretas = ["Ctrl + C", "Ctrl + V", "Ctrl + S", "Ctrl + Z", "Ctrl + A", "F1", "Ctrl + P", "Alt + F4", "Alt + Tab", "Ctrl + N"];
+
+        function toggleGabarito() {
+            const gabarito = document.getElementById('gabarito');
+            const btn = document.getElementById('toggle-btn');
+
+            if (gabarito.style.display === 'none' || gabarito.style.display === '') {
+                calcularPontuacao();
+                gabarito.style.display = 'block';
+                btn.textContent = 'Ocultar Gabarito';
+            } else {
+                gabarito.style.display = 'none';
+                btn.textContent = 'Exibir Gabarito';
+            }
+        }
+
+        function calcularPontuacao() {
+            const inputs = document.querySelectorAll('.answer-input');
+            let pontos = 0;
+
+            inputs.forEach((input, index) => {
+                if (input.value.trim().toLowerCase() === respostasCorretas[index].toLowerCase()) {
+                    pontos++;
+                }
+            });
+
+            const pontuacao = document.getElementById('pontuacao');
+            pontuacao.textContent = `Você acertou ${pontos} de ${respostasCorretas.length} exercícios.`;
+        }
+    </script>
+</body>
+</html>
